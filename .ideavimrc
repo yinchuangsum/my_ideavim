@@ -1,0 +1,37 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+" Source your .vimrc
+source ~/.VIMRC
+
+let mapleader = ","
+
+nmap <leader>r :action RenameElement<CR>
+nmap <leader>w :action MoveTabRight<CR>
+nmap <leader>e :action NextSplitter<CR>
+nmap <leader>q :action Switcher<CR>
+nmap <leader>p :action $LRU<CR>
+
+nmap <leader>m :action MethodDown<CR>
+nmap <leader>M :action MethodUp<CR>
+nmap <leader><leader>m :action FileStructurePopup<CR>
+set NERDTree
+set easymotion
+set surround
+
+
+nmap <leader>f <Plug>(easymotion-f)
+nmap <leader>F <Plug>(easymotion-F)
+
+"Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+"
+"
+"let g:VM_maps = {}
+"let g:VM_maps['Find Under']         = 'mn'           " replace C-n
+"let g:VM_maps['Find Subword Under'] = 'mn'
+
+Plug 'vim-scripts/argtextobj.vim'
+
+Plug 'tommcdo/vim-exchange'
